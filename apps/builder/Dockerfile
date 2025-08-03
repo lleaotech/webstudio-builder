@@ -11,7 +11,7 @@ WORKDIR /app
 COPY . .
 
 # Instala pnpm e dependências do projeto
-RUN npm install -g pnpm && pnpm install --frozen-lockfile
+RUN npm install -g pnpm && pnpm install --no-frozen-lockfile
 
 # Expõe a porta padrão do Vite
 EXPOSE 5173
